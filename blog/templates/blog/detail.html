@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contacts</title>
+</head>
+<body>
+	<div>	<a href= "{% url 'home' %}">Home</a>
+		<a href="{% url 'contact' %}">Contact</a>
+		<a href="{% url 'post' %}">Blog</a></div>
+	<div><h1>This is blog page</h1></div>
+	{{ post.title }} <br>
+	Published Date :{{ post.date }} <br>
+	<hr>
+	{{ post.body }} <br>
+	<img src="{{ post.image.url }}"/>
+</body>
+</html>
